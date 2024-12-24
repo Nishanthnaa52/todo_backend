@@ -97,7 +97,7 @@ DATABASE_URL= "postgresql://todo_database_6r9j_user:RPExAjImyRx81Y9XUv4BrNQ6yCOv
 
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    'default': dj_database_url.config(default=DATABASE_URL)
 }
 
 
